@@ -8,3 +8,6 @@ this is the notebook of learning DataMing, the content includes:
 ...
 
 this notebook will be updated in time.
+
+$x_2$
+
