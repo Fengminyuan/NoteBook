@@ -11,7 +11,7 @@
 
 监督学习的过程可以描述为如下图所示：
 
-![1526731211817](C:\Users\CHENGS~1\AppData\Local\Temp\1526731211817.png)
+![1526731211817](https://github.com/songcmic/NoteBook/blob/master/Machine%20Learning/Supervised%20Learning/photos/supervised%20structure.png)
 
 * 当需要预测的$y$值是连续值时，这个学习问题称为**回归问题**
 * 当需要预测的$y$值是离散值时，这个学习问题称为**分类问题**
