@@ -1,8 +1,6 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
-
-
 # NoteBook
+
+**由于使用了LaTex公式，chrome浏览器需要安装[GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima?utm_source=chrome-app-launcher-info-dialog)插件来浏览完整笔记**
 
 this is the notebook of learning DataMing, the content includes:
 
@@ -12,6 +10,4 @@ this is the notebook of learning DataMing, the content includes:
 ...
 
 this notebook will be updated in time.
-
-$x_2$
 
