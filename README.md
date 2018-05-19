@@ -2,7 +2,7 @@
 
 this is the notebook of learning DataMing, the content includes:
 
-* machine learning
+* machine learning(CS229)
 * deep learning
 
 ...
