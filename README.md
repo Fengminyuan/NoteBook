@@ -1,4 +1,6 @@
-<script type="text/javascript" src="[http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">](http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default%22%3E%3C/script%3E) 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+
 
 # NoteBook
 
