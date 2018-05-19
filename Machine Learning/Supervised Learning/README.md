@@ -16,7 +16,9 @@
 * 当需要预测的$y$值是连续值时，这个学习问题称为**回归问题**
 * 当需要预测的$y$值是离散值时，这个学习问题称为**分类问题**
 
+Content：
 
+- [线性回归](https://github.com/songcmic/NoteBook/blob/master/Machine%20Learning/Supervised%20Learning/Linear%20Regression.md)
 
 
 
