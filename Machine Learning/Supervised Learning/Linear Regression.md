@@ -21,7 +21,7 @@ $$\theta_j := \theta_j-\alpha\frac{\partial}{\partial\theta_j}J(\theta).$$
 	
 ​	其中$\alpha$是学习率，不断的重复上述更新过程，损失函数将沿着负梯度方向快速的减小。为了简单起见，这里先考虑只有一个训练样本$(x,y)$的情况。
 
-$$\frac{\partial}{\partial\theta_j}J(\theta)=\frac{\partial}{\partial\theta_j}\frac{1}{2}(h_{\theta}(x)-y)^2\\ =2\times\frac{1}{2}(h_{\theta}(x)-y)\times\frac{\partial}{\partial\theta_j}(h_{\theta}(x)-y)\\ =(h_{\theta}(x)-y)\times\frac{\partial}{\partial\theta_j}(\sum_{i=0}^{n}\theta_ix_i-y)\\ =(h_{\theta}(x)-y)x_j$$
+$$\frac{\partial}{\partial\theta_j}J(\theta)=\frac{\partial}{\partial\theta_j}\frac{1}{2}(h_{\theta}(x)-y)^2\\{=}2\times\frac{1}{2}(h_{\theta}(x)-y)\times\frac{\partial}{\partial\theta_j}(h_{\theta}(x)-y)\\{=}(h_{\theta}(x)-y)\times\frac{\partial}{\partial\theta_j}(\sum_{i=0}^{n}\theta_ix_i-y)\\{=}(h_{\theta}(x)-y)x_j$$
 
 ​	因此对于只有一个训练样本的情况，更新规则如下所示：
 
@@ -35,12 +35,12 @@ $$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x_j^{(i)}.$$
 
 （1）批梯度下降更新规则如下：
 
-$$Repeat\quad until\quad convergence\lbrace\\ \theta_j:=\theta_j+\alpha\sum_{i=1}^{m}(y^{(i)}-h_{\theta}(x^{(i)}))x_j^{(i)}\quad\quad (for\quad every\quad j)\\ \rbrace$$
+$$Repeat\quad until\quad convergence\lbrace\\{\theta_j}:=\theta_j+\alpha\sum_{i=1}^{m}(y^{(i)}-h_{\theta}(x^{(i)}))x_j^{(i)}\quad\quad (for\quad every\quad j)\\{\rbrace}$$
 	从公式中可以看出，更新规则中的求和部分就是损失函数$J(\theta)$的梯度，每次更新都是再一整个数据集上进行的。
 
 （2）随机梯度下降更新规则如下：
 
-$$Loop\quad until\quad convergence\lbrace\\ for\quad i=1\quad to\quad m,\lbrace\\ \theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x_j^{(i)}\quad (for \quad every\quad j)\\ \rbrace\\\rbrace $$
+$$Loop\quad until\quad convergence\lbrace\\{for}\quad i=1\quad to\quad m,\lbrace\\{\theta_j}:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x_j^{(i)}\quad (for \quad every\quad j)\\{\rbrace}\\{\rbrace}$$
 
 ​	这种更新方式也是在整个训练集上进行的，但是每次只是针对一个训练样本进行更新。
 
