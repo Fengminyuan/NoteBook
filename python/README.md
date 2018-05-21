@@ -5,3 +5,5 @@ Content:
 [多线程](https://github.com/songcmic/NoteBook/blob/master/python/multithread.md)
 
 [多进程](https://github.com/songcmic/NoteBook/blob/master/python/multiprocessing.md)
+
+[pickle保存数据](https://github.com/songcmic/NoteBook/blob/master/python/pickle.md)
