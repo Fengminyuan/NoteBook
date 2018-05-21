@@ -118,15 +118,15 @@ $$\text{tr}A=\sum_{i=1}^{n}A_{ii}$$
 
 首先需要将之前的均方误差函数改写为矩阵形式，对于一个给定的训练集，定义为矩阵$X$,其中的每一行都代表一个训练样本
 
-$$X=\left[\begin{matrix}-(x^{(1)})^T-\\\\-(x^{(2)})^T-\\\\\vdots\\-(x^{(m)})^T-\end{matrix}\right].$$
+$$X=\left[\begin{matrix}-(x^{(1)})^T-\\\\-(x^{(2)})^T-\\\\\vdots\\\\-(x^{(m)})^T-\end{matrix}\right].$$
 
 每个训练样本的标签$y$共同组成一个标签向量$\vec{y}$，表示如下：
 
-$$\vec{y}=\left[\begin{matrix}y^{(1)}\\\\y^{(2)}\\\\\vdots\\y^{(m)}\end{matrix}\right]$$
+$$\vec{y}=\left[\begin{matrix}y^{(1)}\\\\y^{(2)}\\\\\vdots\\\\y^{(m)}\end{matrix}\right]$$
 
 因为$h_{\theta}(x^{(i)})=(x^{(i)})^T\theta$，所以可以得到
 
-$$X\theta-\vec{y}=\left[\begin{matrix}h_{\theta}(x^{(1)})-y^{(1)}\\\\\vdots\\h_{\theta}(x^{(m)})-y^{(m)}\end{matrix}\right]$$
+$$X\theta-\vec{y}=\left[\begin{matrix}h_{\theta}(x^{(1)})-y^{(1)}\\\\\vdots\\\\h_{\theta}(x^{(m)})-y^{(m)}\end{matrix}\right]$$
 
 因此均方误差函数可以写为$J(\theta)=\frac{1}{2}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2=\frac{1}{2}(X\theta-\vec{y})^T(X\theta-\vec{y})$
 
