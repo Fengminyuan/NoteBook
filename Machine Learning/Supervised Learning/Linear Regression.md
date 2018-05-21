@@ -74,7 +74,7 @@ $$\rbrace$$
 
 $$\nabla_{A}f(A)=\left[\begin{matrix}\frac{\partial f}{\partial A_{11}}&\ldots&\frac{\partial f}{\partial A_{1n}}\\\vdots&\ddots&\vdots\\\frac{\partial}{\partial A_{m1}}&\ldots&\frac{\partial}{\partial A_{mn}}\end{matrix}\right]$$
 
-可以看出$\nabla_Af(A)$自身也是一个$m\times n$的矩阵。举例，比如矩阵$A=\left[\begin{matrix}A_{11}&A_{12}\\A_{21}&A_{22}\end{matrix}\right]$是一个$2\times 2$的矩阵，函数$f:\mathbb{R}^{2\times 2}\mapsto\mathbb{R}$定义如下：
+可以看出$\nabla_Af(A)$自身也是一个$m\times n$的矩阵。举例，比如矩阵$A=\left[\begin{matrix}A_{11}&A_{12}\\\\A_{21}&A_{22}\end{matrix}\right]$是一个$2\times 2$的矩阵，函数$f:\mathbb{R}^{2\times 2}\mapsto\mathbb{R}$定义如下：
 
 $$f(A)=\frac{3}{2}A_{11}+5A_{12}^{2}+A_{21}A_{22}.$$
 
