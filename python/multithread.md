@@ -46,8 +46,9 @@ def thread_job():
 added_thread = threading.Thread(target=thread_job, name='T1')
 added_thread.start()
 print("all done\n")
-
+```
 output:
+```python
 T1 start
 all done
 T1 finish
@@ -69,8 +70,9 @@ added_thread = threading.Thread(target=thread_job, name='T1')
 added_thread.start()
 added_thread.join()
 print("all done\n")
-
+```
 output:
+```python
 T1 start
 T1 finish
 all done
@@ -97,8 +99,9 @@ added_thread2.start()
 added_thread2.join()
 added_thread1.join()
 print('all done')
-
+```
 output:
+```python
 T1 start 
 T2 start 
 T1 finish
@@ -106,14 +109,25 @@ T2 finish
 all done 
 ```
 添加join的方式有很多比如：
+
 方式一：
+
 A.start()
+
 A.join()
+
 B.start()
+
 B.join()
+
 方式二：
+
 A.start()
+
 B.start()
+
 B.join()
+
 A.join()
+
 方法一类似于是线程并行，整体执行速度较慢，而方式二类似于线程并行，执行速度较快
