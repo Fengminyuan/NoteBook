@@ -72,7 +72,7 @@ $$\rbrace$$
 
 假定一个函数$f:\mathbb{R}^{m\times n}\mapsto\mathbb{R}$是将一个$m\times n$的矩阵映射为一个实数，那么函数$f$关于矩阵$A$的导数如下：
 
-$$\nabla_{A}f(A)=\left[\begin{matrix}\frac{\partial f}{\partial A_{11}}&\ldots&\frac{\partial f}{\partial A_{1n}}\\\vdots&\ddots&\vdots\\\frac{\partial}{\partial A_{m1}}&\ldots&\frac{\partial}{\partial A_{mn}}\end{matrix}\right]$$
+$$\nabla_{A}f(A)=\left[\begin{matrix}\frac{\partial f}{\partial A_{11}}&\ldots&\frac{\partial f}{\partial A_{1n}}\\\\\vdots&\ddots&\vdots\\\\\frac{\partial}{\partial A_{m1}}&\ldots&\frac{\partial}{\partial A_{mn}}\end{matrix}\right]$$
 
 可以看出$\nabla_Af(A)$自身也是一个$m\times n$的矩阵。举例，比如矩阵$A=\left[\begin{matrix}A_{11}&A_{12}\\\\A_{21}&A_{22}\end{matrix}\right]$是一个$2\times 2$的矩阵，函数$f:\mathbb{R}^{2\times 2}\mapsto\mathbb{R}$定义如下：
 
@@ -80,7 +80,7 @@ $$f(A)=\frac{3}{2}A_{11}+5A_{12}^{2}+A_{21}A_{22}.$$
 
 则函数$f$关于矩阵$A$的导数如下：
 
-$$\nabla_{A}f(A)=\left[\begin{matrix}\frac{3}{2}&10A_{12}\\A_{22}&A_{21}\end{matrix}\right].$$
+$$\nabla_{A}f(A)=\left[\begin{matrix}\frac{3}{2}&10A_{12}\\\\A_{22}&A_{21}\end{matrix}\right].$$
 
 矩阵的迹运算$\text{tr}$，矩阵的迹是方阵$A$的对角元素之和，即：
 
@@ -118,15 +118,15 @@ $$\text{tr}A=\sum_{i=1}^{n}A_{ii}$$
 
 首先需要将之前的均方误差函数改写为矩阵形式，对于一个给定的训练集，定义为矩阵$X$,其中的每一行都代表一个训练样本
 
-$$X=\left[\begin{matrix}-(x^{(1)})^T-\\-(x^{(2)})^T-\\\vdots\\-(x^{(m)})^T-\end{matrix}\right].$$
+$$X=\left[\begin{matrix}-(x^{(1)})^T-\\\\-(x^{(2)})^T-\\\\\vdots\\-(x^{(m)})^T-\end{matrix}\right].$$
 
 每个训练样本的标签$y$共同组成一个标签向量$\vec{y}$，表示如下：
 
-$$\vec{y}=\left[\begin{matrix}y^{(1)}\\y^{(2)}\\\vdots\\y^{(m)}\end{matrix}\right]$$
+$$\vec{y}=\left[\begin{matrix}y^{(1)}\\\\y^{(2)}\\\\\vdots\\y^{(m)}\end{matrix}\right]$$
 
 因为$h_{\theta}(x^{(i)})=(x^{(i)})^T\theta$，所以可以得到
 
-$$X\theta-\vec{y}=\left[\begin{matrix}h_{\theta}(x^{(1)})-y^{(1)}\\\vdots\\h_{\theta}(x^{(m)})-y^{(m)}\end{matrix}\right]$$
+$$X\theta-\vec{y}=\left[\begin{matrix}h_{\theta}(x^{(1)})-y^{(1)}\\\\\vdots\\h_{\theta}(x^{(m)})-y^{(m)}\end{matrix}\right]$$
 
 因此均方误差函数可以写为$J(\theta)=\frac{1}{2}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2=\frac{1}{2}(X\theta-\vec{y})^T(X\theta-\vec{y})$
 
