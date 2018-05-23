@@ -50,7 +50,7 @@ $$\theta_j := \theta_j + \alpha(y^{(i)}-h_\theta(x^{(i)}))x^{(i)}_{j}$$
 
 可以尝试考虑将逻辑回归中的模型输入强制定为0和1，可以通过改变$g$的定义来实现：
 
-$$g=\begin{cases}1&\text{if  z}\ge0\\0&\text{if z}<0\end{cases}$$
+$$g=\begin{cases}1&\text{if z}\ge0\\\\0&\text{if z}<0\end{cases}$$
 
 同样它的更新规则是：
 
@@ -70,7 +70,7 @@ $$\theta := \theta - \frac{f(\theta)}{f^{'}(\theta)}$$
 
 牛顿迭代法的过程可视化如图所示：
 
-![Netwon]()
+![Netwon](https://github.com/songcmic/NoteBook/blob/master/Machine%20Learning/Supervised%20Learning/photos/QQ%E6%88%AA%E5%9B%BE20180523161108.png)
 
 对于似然函数$l(\theta)$求解极大值，可以转化为求$l^{'}(\theta)$的零点，那么该问题就可以用牛顿下降法来求解：
 
