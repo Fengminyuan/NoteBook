@@ -19,6 +19,7 @@
 Content：
 
 - [线性回归](https://github.com/songcmic/NoteBook/blob/master/Machine%20Learning/Supervised%20Learning/Linear%20Regression.md)
+-[分类和逻辑回归](https://github.com/songcmic/NoteBook/blob/master/Machine%20Learning/Supervised%20Learning/Classification%20and%20Logistic%20Regression.md)
 
 
 
