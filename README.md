@@ -4,9 +4,9 @@
 
 this is the notebook of learning DataMing, the content includes:
 
-* [machine learning(CS229)](https://github.com/songcmic/NoteBook/blob/master/Machine%20Learning/README.md)
+* [machine learning(CS229)](https://github.com/isongc/NoteBook/blob/master/Machine%20Learning/README.md)
 * deep learning
-* [python](https://github.com/songcmic/NoteBook/blob/master/python/README.md)
+* [python](https://github.com/isongc/NoteBook/blob/master/python/README.md)
 
 ...
 
